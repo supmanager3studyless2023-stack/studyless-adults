@@ -1,5 +1,5 @@
 import json,re,datetime,collections
-SRC='/Users/anastasiahuz/.claude/projects/-Users-anastasiahuz-Desktop-erp/bcf78ddb-8f84-429b-9e07-b636e979fe8a/tool-results/mcp-0d8de3d1-1a9e-4a2d-925d-05ea79c754c0-get_values-1795437448658-rt242j.txt'
+SRC='kommo_oplaty_original.json'
 V=json.load(open(SRC))['values']
 rows=[(i+3,r) for i,r in enumerate(V[2:]) if len(r)>1 and r[0].strip()]
 g=lambda r,i: r[i].strip() if len(r)>i else ''
