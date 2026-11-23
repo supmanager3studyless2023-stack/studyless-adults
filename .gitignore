@@ -1,0 +1,9 @@
+# секрети й дані студентів не комітимо
+.env
+*.env
+*.xlsx
+*.pkl
+pf_*.json
+adults_data.*
+sel*.json
+__pycache__/
